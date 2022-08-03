@@ -4,7 +4,7 @@
 }
 body{
 	overflow-x: hidden;
-    background-image:url(/fotos/huellas.jpg);
+    background-image:url(fotos/huellas.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -30,6 +30,7 @@ body{
 	flex-wrap: nowrap; /*se elinean los hijos al tamaño del padre */
 	width: 100%;
     background-color: #16A596; /*color de fondo*/
+
 }
 
 @media screen and (max-width: 768px) {
@@ -54,6 +55,7 @@ body{
 	flex-direction: row;
 	width: 90%;
 	justify-content: flex-end; /*organiza al extremo derecho*/
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -67,8 +69,19 @@ body{
     list-style-type: none;
     padding: 20px;
     font-size: 15px;
-    font-family: 'robotoblack';    
+    font-family: 'robotoblack'; 
+    
+ 
 }
+
+.hijo-menu li:hover{
+    transform: scale(1.5,1.5);
+}
+
+
+ 
+
+
 
 @media screen and (max-width: 768px) {
     .hijo-menu li{
@@ -81,7 +94,9 @@ body{
 .hijo-menu li a{
     text-decoration: none;
     color: white;
-    ;
+    
+
+
 }
 
 /*Fin Menu*/
@@ -107,8 +122,9 @@ body{
     font-size: normal;
     font-family: 'roboto';
     text-align: justify;
-
 }
+
+
 
 /*Parrafos*/
 
@@ -125,17 +141,19 @@ body{
 
     /*intrucciones*/
 
-#intrucciones{
-    display: flex;  
-    flex-wrap: nowrap; 
-    padding: 50px;
-     }
+/*.intrucciones{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color:#F6F5F1;
+     }*/
 
-#grid-tuhistoria{
+.grid-tuhistoria{
+    margin: 20px;
+    background-color: #F6F5F1;
     display: grid;
     grid-template-columns:50px 8fr 50px;
     grid-template-rows: 1.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-    background-color: #F6F5F1;
     row-gap:10px;
     
 
@@ -175,6 +193,7 @@ body{
 .item1{
     grid-column: 1/3;
     grid-row: 2/5;
+    
     
 }
 
@@ -220,6 +239,13 @@ body{
     font-family: 'roboto';
 }
 
+.texto-instrucciones:hover{
+    text-decoration: underline;
+}
+
+
+   
+
     /*fin intruccioned*/
 
     /*historia*/
@@ -231,6 +257,7 @@ body{
 	width: 100%;
     justify-content: space-around;
 
+
     
 }
 
@@ -241,7 +268,10 @@ body{
     grid-template-columns: 1fr 2fr;
     margin: 1%;
     align-items: center;
+    
 }
+
+
 
 @media screen and (max-width: 768px) {
     .hijo-padrehistorias{
@@ -261,6 +291,8 @@ body{
     text-align: center;
     font-family: 'robotoblack';
     color: #16A596;
+    
+
 }
 
 @media screen and (max-width: 768px) {
@@ -276,6 +308,12 @@ section article img{
     width: 250px;
     grid-row: 2/2;
     grid-column: 1/2;
+}
+
+section article img:hover{
+    transform: scale(1.2,1.2);
+    transition: 1s;
+
 }
 
 @media screen and (max-width: 768px) {
